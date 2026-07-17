@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="sidebar"
+      alignment="TOP_CENTER"
+      spacing="8"
+      prefWidth="250.0"
+      minWidth="250.0"
+      maxWidth="250.0"
+      styleClass="sidebar">
+
+    <!-- ============================================================= -->
+    <!-- PADDING GENERAL                                               -->
+    <!-- ============================================================= -->
+
+    <padding>
+        <Insets top="20" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <!-- ============================================================= -->
+    <!-- ENCABEZADO                                                    -->
+    <!-- ============================================================= -->
+
+    <Label fx:id="lblSystemName"
+           text="Biblioteca UTNG"
+           alignment="CENTER"
+           maxWidth="Infinity"
+           styleClass="sidebar-title"/>
+
+    <Label fx:id="lblSubtitle"
+           text="Sistema de Gestión Bibliotecaria"
+           wrapText="true"
+           alignment="CENTER"
+           maxWidth="Infinity"
+           styleClass="sidebar-subtitle"/>
+
+    <Separator/>
+
+    <!-- ============================================================= -->
+    <!-- MENÚ PRINCIPAL                                                -->
+    <!-- ============================================================= -->
+
+    <Button fx:id="btnDashboard"
+            text="🏠   Dashboard"
+            mnemonicParsing="false"
+            focusTraversable="false"
+            alignment="CENTER_LEFT"
+            maxWidth="Infinity"
+            graphicTextGap="10"
+            styleClass="sidebar-button"/>
+
+    <Button fx:id="btnBooks"
+            text="📚   Libros"
+            mnemonicParsing="false"
+            focusTraversable="false"
+            alignment="CENTER_LEFT"
+            maxWidth="Infinity"
+            graphicTextGap="10"
+            styleClass="sidebar-button"/>
+
+    <Button fx:id="btnUsers"
+            text="👥   Usuarios"
+            mnemonicParsing="false"
+            focusTraversable="false"
+            alignment="CENTER_LEFT"
+            maxWidth="Infinity"
+            graphicTextGap="10"
+            styleClass="sidebar-button"/>
+
+    <Button fx:id="btnLoans"
+            text="🔄   Préstamos"
+            mnemonicParsing="false"
+            focusTraversable="false"
+            alignment="CENTER_LEFT"
+            maxWidth="Infinity"
+            graphicTextGap="10"
+            styleClass="sidebar-button"/>
+
+    <Button fx:id="btnReports"
+            text="📄   Reportes"
+            mnemonicParsing="false"
+            focusTraversable="false"
+            alignment="CENTER_LEFT"
+            maxWidth="Infinity"
+            graphicTextGap="10"
+            styleClass="sidebar-button"/>
+
+    <Button fx:id="btnSettings"
+            text="⚙   Configuración"
+            mnemonicParsing="false"
+            focusTraversable="false"
+            alignment="CENTER_LEFT"
+            maxWidth="Infinity"
+            graphicTextGap="10"
+            styleClass="sidebar-button"/>
+
+    <!-- ============================================================= -->
+    <!-- ESPACIADOR                                                    -->
+    <!-- Mantiene la información de versión al final del menú.         -->
+    <!-- ============================================================= -->
+
+    <Region VBox.vgrow="ALWAYS"/>
+
+    <Separator/>
+
+    <!-- ============================================================= -->
+    <!-- INFORMACIÓN DEL SISTEMA                                       -->
+    <!-- ============================================================= -->
+
+    <Label fx:id="lblVersion"
+           text="Biblioteca UTNG v0.1.2"
+           alignment="CENTER"
+           maxWidth="Infinity"
+           styleClass="sidebar-version"/>
+
+    <Label fx:id="lblCopyright"
+           text="© Universidad Tecnológica del Norte de Guanajuato"
+           wrapText="true"
+           alignment="CENTER"
+           maxWidth="Infinity"
+           styleClass="sidebar-footer"/>
+
+</VBox>

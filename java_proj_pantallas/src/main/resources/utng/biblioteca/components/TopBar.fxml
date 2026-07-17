@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
+
+<HBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="topBar"
+      alignment="CENTER_LEFT"
+      spacing="12"
+      prefHeight="70.0"
+      minHeight="70.0"
+      maxHeight="70.0"
+      styleClass="top-bar">
+
+    <!-- Márgenes internos -->
+    <padding>
+        <Insets top="10" right="20" bottom="10" left="20"/>
+    </padding>
+
+    <!-- ============================================================= -->
+    <!-- LOGO                                                          -->
+    <!-- Puede reemplazarse por un ImageView.                          -->
+    <!-- ============================================================= -->
+
+    <Label fx:id="lblLogo"
+           text="📚"
+           styleClass="logo-label"/>
+
+    <Label fx:id="lblTitle"
+           text="Biblioteca UTNG"
+           styleClass="title-label"/>
+
+    <Region HBox.hgrow="ALWAYS"/>
+
+    <Label fx:id="lblUser"
+           text="Administrador"
+           styleClass="user-label"/>
+
+    <Button fx:id="btnSettings"
+            text="⚙ Configuración"
+            mnemonicParsing="false"
+            focusTraversable="false"
+            styleClass="top-button"/>
+
+    <Button fx:id="btnLogout"
+            text="⏻ Cerrar sesión"
+            mnemonicParsing="false"
+            focusTraversable="false"
+            styleClass="logout-button"/>
+
+</HBox>

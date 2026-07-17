@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="dashboardRoot"
+      alignment="TOP_LEFT"
+      spacing="24"
+      fillWidth="true"
+      styleClass="dashboard">
+
+    <padding>
+        <Insets top="30" right="35" bottom="30" left="35"/>
+    </padding>
+
+    <VBox spacing="5">
+
+        <Label fx:id="lblWelcome"
+               text="Bienvenido al Sistema Biblioteca UTNG"
+               styleClass="dashboard-title"/>
+
+        <Label fx:id="lblDescription"
+               wrapText="true"
+               text="Administra libros, usuarios, préstamos y reportes desde una única plataforma."
+               styleClass="dashboard-description"/>
+
+    </VBox>
+
+    <Separator/>
+
+    <FlowPane fx:id="summaryCards"
+              hgap="20"
+              vgap="20"
+              prefWrapLength="900">
+
+        <VBox alignment="CENTER"
+              spacing="10"
+              prefWidth="180"
+              prefHeight="120"
+              styleClass="dashboard-card">
+
+            <Label text="📚"
+                   styleClass="card-icon"/>
+
+            <Label text="Libros"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblBooks"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+        <VBox alignment="CENTER"
+              spacing="10"
+              prefWidth="180"
+              prefHeight="120"
+              styleClass="dashboard-card">
+
+            <Label text="👥"
+                   styleClass="card-icon"/>
+
+            <Label text="Usuarios"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblUsers"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+        <VBox alignment="CENTER"
+              spacing="10"
+              prefWidth="180"
+              prefHeight="120"
+              styleClass="dashboard-card">
+
+            <Label text="🔄"
+                   styleClass="card-icon"/>
+
+            <Label text="Préstamos"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblLoans"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+        <VBox alignment="CENTER"
+              spacing="10"
+              prefWidth="180"
+              prefHeight="120"
+              styleClass="dashboard-card">
+
+            <Label text="✅"
+                   styleClass="card-icon"/>
+
+            <Label text="Disponibles"
+                   styleClass="card-title"/>
+
+            <Label fx:id="lblAvailable"
+                   text="0"
+                   styleClass="card-value"/>
+
+        </VBox>
+
+    </FlowPane>
+
+    <Separator/>
+
+    <VBox spacing="15">
+
+        <Label text="Acciones rápidas"
+               styleClass="section-title"/>
+
+        <HBox spacing="15">
+
+            <Button fx:id="btnNewBook"
+                    text="📘 Nuevo libro"
+                    mnemonicParsing="false"
+                    prefWidth="160"
+                    styleClass="action-button"/>
+
+            <Button fx:id="btnNewUser"
+                    text="👤 Nuevo usuario"
+                    mnemonicParsing="false"
+                    prefWidth="160"
+                    styleClass="action-button"/>
+
+            <Button fx:id="btnNewLoan"
+                    text="📖 Registrar préstamo"
+                    mnemonicParsing="false"
+                    prefWidth="190"
+                    styleClass="action-button"/>
+
+        </HBox>
+
+    </VBox>
+
+    <!-- ============================================================= -->
+    <!-- ESPACIADOR                                                    -->
+    <!-- Permite mantener el contenido superior alineado cuando        -->
+    <!-- exista espacio adicional en la ventana.                       -->
+    <!-- ============================================================= -->
+
+    <Region VBox.vgrow="ALWAYS"/>
+
+    <!-- ============================================================= -->
+    <!-- PIE DEL DASHBOARD                                             -->
+    <!-- ============================================================= -->
+
+    <Label fx:id="lblStatus"
+           text="Sistema listo."
+           styleClass="dashboard-status"/>
+
+</VBox>
