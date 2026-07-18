@@ -1,0 +1,41 @@
+.main-pane {
+    -fx-background-color: black;
+    -fx-padding: 20px;
+}
+
+.display-label {
+    -fx-text-fill: white;
+    -fx-font-size: 60px;
+    -fx-alignment: center-right;
+    -fx-pref-width: 310px;
+}
+
+.button {
+    -fx-font-size: 24px;
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+    -fx-background-radius: 35px;
+}
+
+.btn-dark {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+}
+
+.btn-gray {
+    -fx-background-color: #A5A5A5;
+    -fx-text-fill: black;
+}
+
+.btn-orange {
+    -fx-background-color: #FF9F0A;
+    -fx-text-fill: white;
+}
+
+.btn-zero {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-pref-width: 150px;
+    -fx-alignment: center-left;
+    -fx-padding: 0 0 0 25px;
+}

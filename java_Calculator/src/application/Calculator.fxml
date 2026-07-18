@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" spacing="20" styleClass="main-pane">
+    <Label text="0" styleClass="display-label" />
+    
+    <GridPane hgap="10" vgap="10" alignment="center">
+        <!-- Fila 1 -->
+        <Button text="AC" styleClass="btn-gray" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Button text="+/-" styleClass="btn-gray" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Button text="\%" styleClass="btn-gray" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <Button text="/" styleClass="btn-orange" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+        
+        <!-- Fila 2 -->
+        <Button text="7" styleClass="btn-dark" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button text="8" styleClass="btn-dark" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button text="9" styleClass="btn-dark" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Button text="x" styleClass="btn-orange" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+        <!-- Fila 3 -->
+        <Button text="4" styleClass="btn-dark" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Button text="5" styleClass="btn-dark" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button text="6" styleClass="btn-dark" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <Button text="-" styleClass="btn-orange" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+        <!-- Fila 4 -->
+        <Button text="1" styleClass="btn-dark" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Button text="2" styleClass="btn-dark" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button text="3" styleClass="btn-dark" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Button text="+" styleClass="btn-orange" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+
+        <!-- Fila 5 -->
+        <Button text="0" styleClass="btn-zero" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+        <Button text="." styleClass="btn-dark" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <Button text="=" styleClass="btn-orange" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+    </GridPane>
+</VBox>
